@@ -1,13 +1,87 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  transition: all 0.3s ease-in-out;
+}
+body {
+  background-color: #0b0b0b;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: inline-flex;
+  flex-direction: column;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.timer-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  min-height: 200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+  background-color: #343434;
+  color: #fff;
+  text-align: center;
+  margin-inline: 1rem;
+}
+.timer-item p:first-of-type {
+  color: #30c59c;
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Orbitron", sans-serif;
+}
+button,
+input {
+  height: 40px;
+  padding-inline: 1rem;
+  margin-bottom: 0;
+  border: none;
+  margin-inline: 0.5rem;
+  border-radius: 4px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+button {
+  color: #fff;
+  font-weight: bold;
+  background-color: #30c59c;
+}
+button.reset {
+  background-color: red;
+}
+form {
+  margin-bottom: 2rem;
 }
